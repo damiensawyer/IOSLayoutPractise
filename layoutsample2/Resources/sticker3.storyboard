@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -12,22 +12,47 @@
                         <viewControllerLayoutGuide type="top" id="j8f-x5-NCn"/>
                         <viewControllerLayoutGuide type="bottom" id="UYs-W3-BLd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Iq2-TL-imO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="Iq2-TL-imO" userLabel="mainview">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jei-1y-Zgm">
-                                <rect key="frame" x="16" y="-52" width="100" height="200"/>
-                                <color key="backgroundColor" red="0.93913182751670932" green="0.42838108070510628" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-a2-Gll" userLabel="redrect">
+                                <rect key="frame" x="60" y="51" width="200" height="250"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-t1-PN5" userLabel="greenrect">
+                                        <rect key="frame" x="75" y="75" width="50" height="100"/>
+                                        <color key="backgroundColor" red="0.56506319699999996" green="1" blue="0.39423472409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="YO4-hQ-fBl"/>
+                                            <constraint firstAttribute="height" constant="100" id="ZlA-hH-2iG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93262951545077755" blue="0.545923296441717" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="dj0-t1-PN5" secondAttribute="centerX" id="3d5-Zg-SVy"/>
+                                    <constraint firstAttribute="width" constant="200" id="8CH-9a-FFB"/>
+                                    <constraint firstAttribute="height" constant="250" id="sHx-Td-w8U"/>
+                                    <constraint firstAttribute="centerY" secondItem="dj0-t1-PN5" secondAttribute="centerY" id="xBM-2W-rK5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYs-W3-BLd" firstAttribute="top" secondItem="hAO-a2-Gll" secondAttribute="bottom" constant="267" id="5AB-ID-vSt"/>
+                            <constraint firstAttribute="centerX" secondItem="hAO-a2-Gll" secondAttribute="centerX" id="sig-VI-vlQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Sv-Dc-HfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="982" y="266"/>
+            <point key="canvasLocation" x="546.66666666666663" y="309.56"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
     <color key="tintColor" red="1" green="0.34026806630351825" blue="0.28838761732826401" alpha="1" colorSpace="calibratedRGB"/>
 </document>
